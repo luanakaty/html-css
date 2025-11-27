@@ -1,0 +1,9 @@
+#minha-foto {
+    width: 250px;
+    border-radius: 50px;
+}
+
+#secao {
+    border: 1px dotted black;
+    padding: 10px;
+}
