@@ -50,11 +50,13 @@ header > p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     max-width: 600px;
+   
     margin: auto;
     padding-right: 10px;
     padding-left: 10px;
     color: white;
     background-color: #12753ad2;
+    
     
 }
  
