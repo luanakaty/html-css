@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead,tfoot{
+            background-color: rgb(70, 66, 66);
+            color: white;
+        } 
+        img {
+            height: 16px;
+        }
+       td.num {
+        text-align: right;
+       }
+       tbody th {
+       background-color: rgb(70, 66, 66);
+       color: white;
+       }
+       
+       thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color:  rgb(70, 66, 66);
+       }
+       tbody > tr:nth-child(2n){
+        background-color: lightgray;
+       }
+      
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+    <thead>
+      <tr>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 50px;">População</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/40px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png"> São paulo</td>
+             <td class="num">45 919 049</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/40px-Bandeira_de_Minas_Gerais.svg.png" alt=""> Minas Gerais</td>
+            <td class="num">21 168 791</td>
+
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/40px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt=""> Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/40px-Bandeira_da_Bahia.svg.png" alt=""> Bahia</td>
+            <td class="num">14 873 064</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/40px-Bandeira_do_Paran%C3%A1.svg.png" alt=""> Paraná</td>
+            <td class="num">11 433 957</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/40px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt=""> Rio Grande so Sul</td>
+            <td class="num">11 377 239</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/40px-Bandeira_de_Pernambuco.svg.png" alt=""> Pernambuco</td>
+            <td class="num">9 557 071</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/40px-Bandeira_do_Cear%C3%A1.svg.png" alt="">Ceará</td>
+            <td class="num">9 132 078</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/40px-Bandeira_do_Par%C3%A1.svg.png" alt=""> pará</td>
+            <td class="num">8 602 865</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/40px-Bandeira_de_Santa_Catarina.svg.png" alt=""> Santa Catarina</td>
+            <td class="num">7 075 181</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/40px-Flag_of_Goi%C3%A1s.svg.png" alt=""> Goias</td>
+            <td class="num">7 423 629</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/40px-Bandeira_do_Maranh%C3%A3o.svg.png" alt=""> Maranhão</td>
+            <td class="num">7 018 211</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/40px-Bandeira_do_Amazonas.svg.png" alt=""> Amazonas</td>
+            <td class="num">4 144 597</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/40px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" alt=""> Espírito Santo</td>
+            <td class="num">4 018 650</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/40px-Bandeira_da_Para%C3%ADba.svg.png" alt=""> Paraíba</td>
+            <td class="num">4 018 127</td>
+        </tr>
+        <tr>
+            <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/40px-Bandeira_do_Rio_Grande_do_Norte.svg.png" alt="">Rio Grande do Norte</td>
+            <td class="num">3 506 853</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/40px-Bandeira_de_Mato_Grosso.svg.png" alt=""> Mato Grosso</td>
+            <td class="num">3 484 466</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/40px-Bandeira_de_Alagoas.svg.png" alt=""> Alagoas</td>
+            <td class="num">3 337 357</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/40px-Bandeira_do_Piau%C3%AD.svg.png" alt=""> Piauí</td>
+            <td class="num">3 273 227</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/40px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt=""> Distrito Federal</td>
+            <td class="num">3 015 268</td>
+        </tr>
+        <tr>
+            <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/40px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt="">Mato Grosso  do Sul</td>
+            <td class="num">2 778 986</td>
+        </tr>
+        <tr>
+            <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/40px-Bandeira_de_Sergipe.svg.png" alt="">Sergipe</td>
+            <td class="num">2 298 696</td>
+        </tr>
+        <tr>
+            <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/40px-Bandeira_de_Rond%C3%B4nia.svg.png" alt="">Rodônia</td>
+            <td class="num">101777 225</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/40px-Bandeira_do_Tocantins.svg.png" alt=""> Tocantins</td>
+            <td class="num">1 586 859</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/40px-Bandeira_do_Acre.svg.png" alt=""> Acre</td>
+            <td class="num">881 935</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/40px-Bandeira_do_Acre.svg.png" alt=""> Amapá</td>
+            <td class="num">845 731</td>
+        </tr>
+        <tr>
+            <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/40px-Bandeira_de_Roraima.svg.png" alt="">Roraima</td>
+            <td class="num">605 761</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <caption>População das Unidades Federativas</caption>
+       <tr>
+        <th>Total de Habitantes</th>
+        <td><strong>210.147.125</strong></td>
+       </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
