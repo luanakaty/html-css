@@ -97,4 +97,13 @@ h2 {
     text-decoration: underline rgba(0, 0, 0, 0.5);
 }
 
+.tela-inteira {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../estilo/conceito-de-colagem-de-html-e-css-com-pessoa_23-2150062008.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
