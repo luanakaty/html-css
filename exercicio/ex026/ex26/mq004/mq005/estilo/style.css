@@ -1,32 +1,83 @@
 @charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#h2_principal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: boder;
+  font-size: 30px;
+  text-decoration: underline rgba(0, 0, 0, 0.438);
+  text-align: center;
+  padding: 10px;
 
-        h1 {  
-            color: rgb(228, 52, 52);
-            font-family:Arial, Helvetica, sans-serif;
-            font-size: 60px;
-            text-align: center;
-        }
-    #h2_principal {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: boder;
-            font-size: 30px;
-            text-decoration: underline rgba(0, 0, 0, 0.438);
-           text-align: center;
-        }
-       #h2_man {
-        font-size: 40px;
-       }
-       h2#linha {
-        text-decoration:underline rgba(0, 0, 0, 0.719)
-        
-       }
-        {
-        text-decoration:underline rgba(0, 0, 0, 0.719)
-       }
-       
-        p {
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: solid 1px black;
-        }
-      
+}
+header {
+   
+    padding: 0px;
+    margin-top: 0px;
+    background-color: rgba(128, 128, 128, 0.349);
+    width: 10vw;
+    
+}
+
+
+#h2_man {
+  font-size: 40px;
+}
+h2#linha {
+  text-decoration: underline rgba(0, 0, 0, 0.5);
+  padding: 20px;
+
+}
+
+menu {
+    display: block;
+    
+}
+menu > ul {
+    list-style-type: none;
+    text-align:left;
+    
+}
+menu > ul > li > a {  
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-top: 1px solid grey ;
+    color:black;
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: solid 1px black;
+  padding: 10px;
+}
+menu > ul > li > a:hover {
+    background-color: rgba(128, 128, 128, 0.459);
+    
+}
+main {
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer {
+    color: blue;
+}
+article > p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 10px;
+}
+
+footer {
+    text-decoration: underline solid blue;
+}
+h2 {
+    text-decoration: underline rgba(0, 0, 0, 0.5);
+}
+
+
