@@ -36,12 +36,16 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #menu ul {
   list-style: none;
   display: flex;
  gap: 10px;
+ 
 }
 
 nav#menu a {
@@ -52,6 +56,8 @@ nav#menu a {
   margin-right: 70px;
   border-radius: 5px;
   transition: background-color 1s, color 1s;
+  display: flex;
+ 
 }
 
 nav#menu a:hover {
@@ -171,6 +177,13 @@ article h2 {
   background-color: var(--fundo-principal);
   border-radius: 4px;
 }
+
+#skill-container .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
 #formacao-container {
   display: flex;
   flex-direction: column-reverse;
@@ -203,11 +216,59 @@ article h2 {
   font-size: 1.1em;
 }
 
-#skill-container .progresso {
-  height: 100%;
-  background-color: var(--destaque-inverso);
-  border-radius: 4px;
+#projeto-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
 }
+
+#projeto-container .projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-color 0.5s, border-width 0.5s;
+}
+
+#projeto-container .projeto:hover {
+    border-color: var(--destaque);
+    border-left-width: 15px;
+    cursor: pointer ;
+}
+
+#projeto-container .foto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+}
+ footer {
+  background-color: var(--destaque);
+  color-scheme: var(--texto);
+  text-align: center;
+  padding: 15px;
+ }
+
+ footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--destaque-inverso);
+  font-weight: bold;
+
+ }
+
+ footer a:hover {
+  color: var(--texto-inverso );
+  
+ }
+
+
+    
+
+
 
 
 
