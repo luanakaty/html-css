@@ -12,6 +12,15 @@
   margin: 0px;
   padding:  0px;
   box-sizing: border-box;
+} 
+
+body.escuro {
+  -fundo-principal:#0a0a0a;
+  --texto:#c98d8dfd ;
+  --texto-inverso:#bb2929;
+  --destaque:#df3a08f1;
+  --destaque-inverso:#a73917;
+  --fundo-card: #080808;
 }
 
 :root {
@@ -28,6 +37,7 @@ body {
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: backgrond-color 0.5s, color 0.5s;
 }
 header {
   background-color: var(--destaque);
